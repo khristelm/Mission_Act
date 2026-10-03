@@ -1,0 +1,491 @@
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    background-color: #f2963f;
+}
+
+
+/* NAVIGATION BAR */
+.menu {
+    background-color: #ffc286;
+    padding: 18px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-brand {
+    color: #2a1b08;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menu-link:hover {
+    color: #ffa537;
+}
+
+
+/* K-DRAMA BANNER */
+.kdrama-banner {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: #eed0b4c4;
+    padding: 70px 0;
+}
+
+.kdrama-intro {
+    padding: 30px;
+}
+
+.kdrama-intro h1 {
+    color: #2a1b08;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.kdrama-intro p {
+    color: #694f30eb;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+
+/* EXPLORE BUTTON */
+.explore-btn {
+    display: inline-block;
+    background-color: rgb(195, 120, 50);
+    color: rgb(45, 31, 9);
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #341f00;
+    color: rgb(249, 228, 195);
+}
+
+
+/* INTRO IMAGE */
+.intro-image {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 520px;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+
+/* FEATURED SECTION */
+.featured {
+    padding: 0;
+}
+
+
+/* DRAMA SECTIONS */
+.drama-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 60px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* BACKGROUND IMAGES */
+.queen-of-tears {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(230, 206, 178, 0.88),
+            rgba(245, 187, 105, 0.45)
+        ),
+        url("QUEEN OF TEARS.jpg");
+}
+
+.lovely-runner {
+    background-image:
+        linear-gradient(
+            to left,
+            rgba(73, 53, 26, 0.45),
+            rgba(232, 194, 148, 0.88)
+        ),
+        url("LOVELY RUNNER.jpg");
+}
+
+
+/* INNER CONTENT BOX */
+.drama-box {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 45px;
+    border-radius: 25px;
+
+    background-color: rgba(206, 125, 48, 0.18);
+    border: 1px solid rgba(228, 186, 119, 0.45);
+    backdrop-filter: blur(4px);
+}
+
+
+/* DRAMA PHOTO */
+.drama-photo {
+    width: 100%;
+    text-align: center;
+}
+
+.drama-photo img {
+    width: 100%;
+    max-width: 360px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* DRAMA TEXT CONTENT */
+.drama-content {
+    padding: 35px;
+    border-radius: 18px;
+    background-color: rgba(253, 230, 210, 0.82);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.drama-content h2 {
+    color: rgb(45, 31, 9);
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.drama-content p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* VIEW CHARACTERS DROPDOWN */
+.drama-dropdown {
+    width: 100%;
+}
+
+.drama-dropdown summary {
+    display: inline-block;
+    width: auto;
+    padding: 12px 22px;
+    border-radius: 25px;
+    background-color: rgb(45, 31, 9);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none;
+    transition: 0.3s ease;
+}
+
+.drama-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.drama-dropdown summary:hover {
+    background-color: rgb(249, 228, 195);
+    color: rgb(45, 31, 9);
+}
+
+.character-list {
+    margin-top: 18px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.character-list p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.character-list p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ABOUT SECTION */
+.about {
+    padding: 90px 20px;
+    text-align: center;
+    background-color: #eed0b4c4;
+}
+
+.about h2 {
+    color: #2a1b08;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #694f30eb;
+    line-height: 1.8;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #ffc286;
+    color: rgb(10, 10, 10);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+    /* NAVIGATION */
+    .menu {
+        padding: 14px 0;
+    }
+
+    .menu .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-brand {
+        font-size: 23px;
+    }
+
+    .menu-list {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-link {
+        font-size: 14px;
+    }
+
+
+    /* HERO SECTION */
+    .kdrama-banner {
+        min-height: auto;
+        padding: 35px 0 25px;
+    }
+
+    .kdrama-intro {
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .kdrama-intro h1 {
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 15px;
+    }
+
+    .kdrama-intro p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0 auto 22px;
+    }
+
+    .explore-btn {
+        padding: 10px 22px;
+        font-size: 14px;
+    }
+
+    .intro-image {
+        padding: 10px 20px 0;
+    }
+
+    .intro-image img {
+        max-height: 240px;
+    }
+
+
+    /* DRAMA SECTIONS */
+    .drama-section {
+        min-height: auto;
+        width: 100%;
+        padding: 25px 10px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .drama-section > .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+
+    /* INNER BOX */
+    .drama-box {
+        width: 100%;
+        min-height: auto;
+        padding: 12px;
+        margin: 0 auto;
+        border-radius: 18px;
+    }
+
+    .drama-box .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .drama-box .col-lg-7,
+    .drama-box .col-lg-5 {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    /* DRAMA PHOTO */
+    .drama-photo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .drama-photo img {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        height: 300px;
+        object-fit: cover;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+
+    /* DRAMA CONTENT */
+    .drama-content {
+        width: 100%;
+        padding: 22px 18px;
+        margin: 0 auto;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .drama-content h2 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .drama-content p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+
+    /* DROPDOWN BUTTON */
+    .drama-dropdown {
+        width: 100%;
+    }
+
+    .drama-dropdown summary {
+        width: 100%;
+        padding: 11px 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .character-list {
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .character-list p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+
+    /* ABOUT SECTION */
+    .about {
+        padding: 55px 20px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* FOOTER */
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}

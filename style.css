@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    background-image: url(BACKGROUND1.png);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: 50% center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    font-weight: 150;
+    color: black;
+    text-align: center;
+}
+
+.login-page,
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-box,
+.register-box {
+    width: 100%;
+    max-width: 420px;  
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(224, 180, 146, 0.493);  
+    box-shadow: 0 4px 20px rgb(255, 170, 91);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(12, 213, 255, 0.18);
+}
+
+.page-name {
+    text-align: center;
+    color: black;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-form input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.input-form input:focus {
+    border: 2px solid #f2754c;
+    box-shadow: 0 0 10px rgba(255, 183, 132, 0.737);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: dashed;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 10%;
+    background-color: rgb(195, 120, 50);
+    color: rgb(249, 228, 195);
+    font-size: 15px;
+    font-weight: 550;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #341f00;
+}
+
+.register,
+.log-in {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+@media (max-width: 480px) {
+
+    .login-box,
+    .register-box {
+        padding: 30px 20px;
+    }
+
+    .page-name {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    .options {
+        font-size: 13px;
+    }
+}
